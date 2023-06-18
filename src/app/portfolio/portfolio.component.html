@@ -1,0 +1,10 @@
+<div class="container">
+    <h1>Portfolio</h1>
+    <div id="disenoslist" *ngFor="let diseno of disenos">
+        <div class="disenoelement">
+            <img [src]="diseno.getFoto()" (dblclick)="showInformation(diseno.referencia)">
+            <p>{{ diseno.texto }}</p>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,15 @@
+<div class="container" *ngFor="let diseno of disenos">
+    <div id="disenoslist"  *ngIf="diseno.referencia==this.ref">
+        <div class="giantdata"> 
+            <img [src]="diseno.getFoto()">
+            <p>Precio: {{ diseno.precio }}</p>
+            <p>Temporada: {{ diseno.temporada }}</p>
+            <p>Descripción: {{ diseno.texto }}</p>
+        </div>
+        <div class="botones">
+        <button class="btn"  routerLink="/home">Home</button>
+        <button class="btn"  (click)="showPrice(diseno.referencia)">Modify Price</button> 
+        <button class="btn"  (click)="goBack()">Go back</button>
+        </div>
+    </div>
+</div>

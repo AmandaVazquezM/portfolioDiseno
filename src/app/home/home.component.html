@@ -1,0 +1,10 @@
+<div class="container">
+    <div class="about">
+        <h1>Hello, Welcome to my Portfolio</h1>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes</p>
+        <button class="btn" routerLink="/about">More about me</button> <!--no funciona-->
+    </div>
+    <div id="tablaimagenes">
+        <img [src]="diseno.getFoto()" *ngFor="let diseno of disenos">
+    </div>
+</div>

@@ -1,0 +1,27 @@
+.btn{
+    background-color: rgb(208, 199, 203);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    margin-top: 15px; 
+}
+input{
+    background-color: white;
+    border: none;
+    width: 300px;
+}
+h1, p{
+    color: white;
+}
+.botones{
+    display: flex;
+    flex-direction: row;
+    gap:2em;
+}
+.container{
+    margin-top: 20%;
+    margin-left: 20%;
+}

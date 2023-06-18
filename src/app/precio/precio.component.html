@@ -1,0 +1,9 @@
+<div class="container">
+    <h1>Introduce el nuevo precio: </h1>
+    <input type="text" #price>
+    <div class="botones">
+        <button  class="btn" type="submit"  (click)="ModifyPrice(price.value)">Modify price</button>
+        <button class="btn" type="submit"  routerLink="/portfolio">Cerrar</button>
+    </div>
+    <p>Precio: {{ disenos[this.ref].precio }}</p>
+</div>
